@@ -12,6 +12,10 @@
   [start end qty]
   (take qty (get-rand-ints-in-range* start end)))
 
+(def even-numbers (iterate (partial + 2) 0))
+
+(take 20 even-numbers)
+
 (def vm [{:name "Juan" :document 6465}
          {:name "Juan1" :document 62465}
          {:name "Maria" :document 26465}])
